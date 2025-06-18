@@ -1,0 +1,140 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to right, #f3eaff, #ffffff);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 850px;
+  margin: auto;
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  background: #ece4ff;
+  padding: 40px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.highlight {
+  color: #6c40d6;
+}
+
+section {
+  background: #fff;
+  margin-top: 40px;
+  padding: 25px 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+h2 {
+  color: #6c40d6;
+  margin-bottom: 12px;
+  font-size: 1.8rem;
+}
+
+.project h3 {
+  margin-top: 15px;
+  color: #4c2db8;
+}
+
+.skills-list li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: #6c40d6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #6c63ff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+  background-color: #4e41c9;
+}
+
+.material-icons {
+  vertical-align: middle;
+  font-size: 18px;
+  margin-right: 6px;
+  color: #6c40d6;
+}
+
+@media (max-width: 600px) {
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 10px 16px;
+  }
+}
+
+#languages {
+  background: #fff;
+  margin-top: 40px;
+  padding: 25px 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.languages-list {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+.languages-list li {
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
