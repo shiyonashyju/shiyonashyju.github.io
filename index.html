@@ -7,27 +7,56 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
 </head>
 <body>
 
-  <div class="container">
+  <!-- 🌙 Dark Mode Toggle -->
+  <button id="darkModeToggle" class="toggle-btn" aria-label="Toggle Dark Mode">☾</button>
+
+  <!-- 🔗 Navigation -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="nav-brand">Shiyona</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#my-works">Works</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 🧾 Main Content -->
+  <main class="container">
+    
+    <!-- 🎯 Hero Section -->
     <header class="hero">
-      <img src="profile.jpg" alt="Shiyona Profile" class="profile-img" onerror="this.style.display='none'">
+      <img src="profile.jpg" alt="Shiyona Shyju Profile Picture" class="profile-img" onerror="this.style.display='none'">
       <h1>Hi, I'm <span class="highlight">Shiyona Shyju</span></h1>
-      <p class="subheading">Computer Science graduate exploring front-end development and design  with academic project experience and a strong interest in UI design</p>
-      <a href="Shiyona-Resume.pdf" download class="btn"><span class="material-icons">download</span> Resume</a>
+      <p class="subheading">Computer Science graduate exploring front-end development and design with academic project experience and a strong interest in UI design.</p>
+      <a href="Shiyona-Resume.pdf" download class="btn">
+        <span class="material-icons">download</span> Resume
+      </a>
     </header>
 
-    <section id="about">
+    <!-- 👩‍💻 About -->
+    <section id="about" data-aos="slide-up">
       <h2>About Me</h2>
-      <p>I’m a BSc Computer Science graduate from Kannur University who blends code with creativity. I specialize in crafting responsive, elegant websites and user interfaces that focus on user experience and clean aesthetics.</p>
+      <p>Hey there! I’m <strong>Shiyona Shyju</strong>, a B.Sc. Computer Science graduate from Kannur University, Kerala. I’m passionate about both coding and design, and I enjoy learning new things by creating real projects.</p>
+      <p>I love working with HTML and CSS, and I’ve recently started exploring JavaScript and UI tools like Canva and Photoshop. I’ve built my own portfolio website and designed creative Instagram posts and reels for brands.</p>
+      <p>I’m currently looking for opportunities to grow as a front-end developer or digital designer. I may be a fresher, but I’m curious, dedicated, and excited to start my journey in the tech and design world!</p>
     </section>
 
-    <section id="projects">
+    <!-- 🛠 Projects -->
+    <section id="projects" data-aos="slide-up">
       <h2>Projects</h2>
       <div class="project">
-        <h3>EasyKidCare</h3>
-        <p>A web app to enhance parent-teacher communication for early education. I designed the UI and supported front-end development.</p>
+        <h3>EasyKidsCare</h3>
+        <p>A web app to enhance parent-teacher communication for early education. I designed the UI and supported front-end and back-end development.</p>
       </div>
       <div class="project">
         <h3>Personal Portfolio</h3>
@@ -35,33 +64,98 @@
       </div>
     </section>
 
-    <section id="skills">
+    <!-- 🎨 My Works -->
+    <section id="my-works" data-aos="slide-up">
+      <h2>My Works</h2>
+      <p>Here are some of the Instagram posts and reels I’ve designed, edited, and creatively directed. These reflect my passion for visual storytelling and ability to adapt to brand needs.</p>
+      <ol>
+        <li><a href="https://www.instagram.com/reel/DKtXPHKz9Wt/" target="_blank">Instagram Reel</a></li>
+        <li><a href="https://www.instagram.com/reel/DKy2fZnTtz3/" target="_blank">Instagram Reel</a></li>
+        <li><a href="https://www.instagram.com/reel/DKrKPjvxqG6/" target="_blank">Instagram Reel</a></li>
+        <li><a href="https://www.instagram.com/reel/DKt95-rJTDY/" target="_blank">Instagram Reel</a></li>
+        <li><a href="https://www.instagram.com/reel/DKwm3X_pC2y/" target="_blank">Instagram Reel</a></li>
+        <li><a href="https://www.instagram.com/reel/DKy35DWREe4/" target="_blank">Instagram Reel</a></li>
+        <li><a href="https://www.instagram.com/reel/DKwlgw4SDVs/" target="_blank">Instagram Reel</a></li>
+        <li><a href="https://www.instagram.com/p/DK5GRKGBm9D/" target="_blank">Instagram Post</a></li>
+      </ol>
+
+      <h2>Visual Samples</h2>
+      <div class="work">
+        <img src="images/insta-post-1.jpg" alt="Instagram Design Sample">
+        <p><a href="https://www.instagram.com/p/DK5JszENz5M/" target="_blank">View Post On Instagram</a></p>
+      </div>
+      <div class="work">
+        <img src="images/insta-reel-1.JPG" alt="Instagram Design Sample">
+        <p><a href="https://www.instagram.com/reel/DLFLYD1RoDM/" target="_blank">View Reel On Instagram</a></p>
+      </div>
+      <div class="work">
+        <img src="images/insta-reel-2.JPG" alt="Instagram Design Sample">
+        <p><a href="https://www.instagram.com/reel/DK4LQxmRCul/" target="_blank">View Reel On Instagram</a></p>
+      </div>
+    </section>
+
+    <!-- ⚙️ Skills -->
+    <section id="skills" data-aos="slide-up">
       <h2>Skills</h2>
       <ul class="skills-list">
-        <li><strong>Code:</strong> HTML, CSS, JavaScript (basic), Python (basic), C/C++</li>
-        <li><strong>Design:</strong> Canva, Photoshop, YouCut, InShot</li>
+        <li><strong>Code:</strong> HTML, CSS, JavaScript (basic), Python (basic), C/C++ (basic)</li>
+        <li><strong>Design:</strong> Canva, Photoshop, VN, InShot</li>
       </ul>
     </section>
 
-    <section id="languages">
-  <h2>Languages</h2>
-  <ul class="languages-list">
-    <li><strong>Malayalam:</strong> Advanced</li>
-    <li><strong>English:</strong> High proficiency</li>
-    <li><strong>Hindi:</strong> Intermediate</li>
-    <li><strong>Tamil:</strong> Beginner</li>
+    <!-- 🗣 Languages -->
+    <section id="languages" data-aos="slide-up">
+      <h2>Languages</h2>
+      <ul class="languages-list">
+        <li><strong>Malayalam:</strong> Advanced</li>
+        <li><strong>English:</strong> High proficiency</li>
+        <li><strong>Hindi:</strong> Intermediate</li>
+        <li><strong>Tamil:</strong> Beginner</li>
+      </ul>
+    </section>
 
-  </ul>
-</section>
-
-
-    <section id="contact">
+    <!-- 📬 Contact -->
+    <section id="contact" data-aos="slide-up">
       <h2>Contact</h2>
+      <p>If you’d like to work together, collaborate, or just say hi — feel free to reach out!</p>
       <p><span class="material-icons">email</span> <a href="mailto:shiyonashyju07@gmail.com">shiyonashyju07@gmail.com</a></p>
       <p><span class="material-icons">business_center</span> <a href="https://www.linkedin.com/in/shiyona-shyju-773132355" target="_blank">LinkedIn Profile</a></p>
-      <p><span class="material-icons">link</span> LinkedIn / GitHub (Coming soon)</p>
+      <p><span class="material-icons">link</span> <a href="https://github.com/shiyonashyju" target="_blank">GitHub</a></p>
     </section>
-  </div>
+
+  </main>
+
+  <!-- ⬆ Scroll to Top -->
+  <button id="toTopBtn" class="to-top-btn" title="Go to top">↑</button>
+
+  <!-- 📦 Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 700,
+      once: false,
+      offset: 80
+    });
+
+    const toggle = document.getElementById('darkModeToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggle.textContent = document.body.classList.contains('dark-mode') ? '☀' : '☾';
+    });
+
+    const toTopBtn = document.getElementById('toTopBtn');
+    window.onscroll = () => {
+      toTopBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+    };
+    toTopBtn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+
+  <!-- 📄 Footer -->
+  <footer style="text-align:center; font-size: 0.9rem; padding: 20px; color: #888;">
+    © 2025 Shiyona Shyju. All rights reserved.
+  </footer>
 
 </body>
 </html>
